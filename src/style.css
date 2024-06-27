@@ -1,0 +1,107 @@
+@font-face {
+    font-family: '20_dbregular';
+    src: url('./20DB/20db-webfont.woff2') format('woff2'),
+         url('./20DB/20db-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aileronregular';
+    src: url('./aileron/aileron-regular-webfont.woff2') format('woff2'),
+         url('./aileron/aileron-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --main-bg-color: #17181b;
+    --secondary-bg-color: #45464a;
+    --main-font-color: white;
+    --nav-bar-color: #ebcf60;
+    --border-color: #ebcf60;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
+}
+
+
+#content {
+    display: flex;
+    justify-content: center;
+    font-family: "aileronregular";
+    
+}
+
+.title-box {
+    display: grid;
+    text-align: center;
+    gap: .5rem;
+    justify-content: center;
+    align-items: start;
+}
+
+.main-container {
+    border: 2px solid black;
+    display: grid;
+    border-radius: 2px;
+    background-color: var(--secondary-bg-color);
+    width: 65%;
+}
+
+.title {
+    font-size: 64px;
+    font-family: '20_dbregular';
+    text-align: center;
+}
+
+.sub-text, .caption {
+    text-align: center;
+}
+
+.about-us-info {
+    text-align: center;
+    padding: .5rem;
+}
+
+.menu-card, .contact-card, .home-box {
+    border: 2px solid var(--border-color);
+    margin: 1rem;
+    padding: .5rem;
+    display: grid;
+}
+
+.home-box {
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 32px;
+    font-family: '20_dbregular';
+}
+
+#bat {
+    width: 100px;
+}
+
+.nav {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 1rem;
+    background-color: var(--nav-bar-color);
+}
+
+.nav > button {
+    height: 2rem;
+    background-color: black;
+    border: none;
+    color: var(--main-font-color);
+    border: 1px solid black;
+}
